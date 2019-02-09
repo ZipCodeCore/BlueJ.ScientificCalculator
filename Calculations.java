@@ -12,22 +12,22 @@ public class Calculations
         return firstNum * secondNum;
     }
     
-    public double divide(double firstNum, double secondNum)
+    public static double divide(double firstNum, double secondNum)
     {
         return firstNum / secondNum;
     }
     
-    public double add(double firstNum, double secondNum)
+    public static double add(double firstNum, double secondNum)
     {
         return firstNum + secondNum;
     }
     
-        public double subtract(double firstNum, double secondNum)
+        public static double subtract(double firstNum, double secondNum)
     {
         return firstNum - secondNum;
     }
     
-        public double square(double firstNum)
+        public static double square(double firstNum)
     {
         return firstNum * firstNum;
     }
