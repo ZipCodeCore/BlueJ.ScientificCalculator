@@ -54,6 +54,10 @@ public class IOConsole
     
     System.out.println(answer);
 }
+
+public void display(double first,String operator, double second, double result ){
+       System.out.printf("%.1f %c %.1f = %.1f", first, operator, second, result);
+   }
     
     public static void getInputs(Scanner scanner) {
         for (int i = 0; i < numberOfInputs; i++){
