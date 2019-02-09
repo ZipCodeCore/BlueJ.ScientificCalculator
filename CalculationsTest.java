@@ -165,4 +165,32 @@ public class CalculationsTest{
         
         Assert.assertEquals(expected, actual, 0);
     }
+    @Test
+    public void testPow(){
+        double firstNum = 2;
+        double secondNum = 3;
+        
+        double expected = 8;
+        double actual = Calculations.pow(firstNum, secondNum);
+        
+        Assert.assertEquals(expected, actual, 0);
+    }
+    @Test
+    public void testInverse(){
+        double firstNum = 2;
+        
+        double expected = 0.5;
+        double actual = Calculations.inverse(firstNum);
+        
+        Assert.assertEquals(expected, actual, 0);
+    }
+    @Test
+    public void testchangeSign(){
+        double firstNum = 5;
+        
+        double expected = -5;
+        double actual = Calculations.changeSign(firstNum);
+        
+        Assert.assertEquals(expected, actual, 0);
+    }
 }
