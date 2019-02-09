@@ -3,26 +3,32 @@
 
 ## Description
 
-In this project you will build a small app to function as a calculator. This app  will be built in Java, and will use the topics and techniques discussed during the week.
+* In this project you will build a small app to function as a calculator.
+* This app  will be built in Java, and will use the topics and techniques discussed during the week.
 
-You should work on this project in your own repository. Click the `fork` button in the top right corner to create a copy of this repository on your github account. You can go through the [GitHub forking tutorial](https://help.github.com/articles/fork-a-repo/) if you need additional practice with this.
+* You should work on this project in your own repository.
+* Click the `fork` button in the top right corner to create a copy of this repository on your github account.
+  * You can go through the [GitHub forking tutorial](https://help.github.com/articles/fork-a-repo/) if you need additional practice with this.
 
 
 ## Requirements
 
 ### Testing
 
-All features must be tested. Tests must include normal behavior, and any possible error situations. Tests must have descriptive names and should be independent of each other (running or not running one test should not influence the behavior of any other test).
+* All features must be tested.
+* Tests must include normal behavior, and any possible error situations.
+* Tests must have descriptive names and should be independent of each other (running or not running one test should not influence the behavior of any other test).
 
 ### Documentation
-
-You must produce UML diagrams for your program. All classes (excluding test classes) must be included in the UML class diagrams. Your UML must be approved by an instructor by 5PM on Friday.
+* You must produce UML diagrams for your program.
+* All classes (excluding test classes) must be included in the UML class diagrams.
+* Your UML must be approved by an instructor by 5PM on Friday.
 
 ### Core Features
 
 All calculators should have the following features:
 
-- A state, representing the value currently displayed on the calculator (default 0)
+- A `state`, representing the value currently displayed on the calculator (default 0)
 - Get the current number on the display
 - Clear the display
 - Change the number on the display
