@@ -5,13 +5,11 @@
 * **Purpose** - To establish familiarity with:
  * Object `state`
 
-* In this project you will build a small app to function as a calculator.
-* You should work on this project in your own repository.
-
 
 ## Git Collaboration
 * Click the `fork` button in the top right corner to create a copy of this repository on your github account.
   * You can go through the [GitHub forking tutorial](https://help.github.com/articles/fork-a-repo/) if you need additional practice with this.
+* You should work on this project in your own repository.
 
 
 ## Requirements
