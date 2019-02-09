@@ -156,4 +156,13 @@ public class CalculationsTest{
         
         Assert.assertEquals(expected, actual, 0);
     }
+    @Test
+    public void testSqrt(){
+        double firstNum = 9;
+        
+        double expected = 3;
+        double actual = Calculations.sqrt(firstNum);
+        
+        Assert.assertEquals(expected, actual, 0);
+    }
 }

@@ -22,15 +22,21 @@ public class Calculations
         return firstNum + secondNum;
     }
     
-        public static double subtract(double firstNum, double secondNum)
+    public static double subtract(double firstNum, double secondNum)
     {
         return firstNum - secondNum;
     }
     
-        public static double square(double firstNum)
+    public static double square(double firstNum)
     {
         return firstNum * firstNum;
     }
+    
+    public static double sqrt(double firstNum)
+    {
+        return Math.sqrt(firstNum);
+    }
+    
     
     
 }
