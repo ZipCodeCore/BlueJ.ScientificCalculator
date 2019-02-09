@@ -1,4 +1,4 @@
-# ZCW-MacroLabs-OOP-ScientificCalculator
+# BlueJ.ScientificCalculator
 
 ## Description
 * **Objective** - To implement an `ScientificCalculator` which displays output of basic and scientific computations.
