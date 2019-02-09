@@ -1,4 +1,4 @@
-
+ 
 /**
  * These are all the methods the user can call on
  *
@@ -37,6 +37,18 @@ public class Calculations
         return Math.sqrt(firstNum);
     }
     
+    public static double pow(double firstNum, double secondNum)
+    {
+        return Math.pow(firstNum, secondNum);
+    }
     
+    public static double inverse(double firstNum)
+    {
+        return 1 / firstNum;
+    }
     
+    public static double changeSign(double firstNum)
+    {
+        return -firstNum;
+    }
 }
