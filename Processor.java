@@ -1,13 +1,19 @@
-public class Logic {
+public class Processor {
 	
-	private static Operations operator = new Operations();
+	private static Calculator operations;
+	private static IOConsole console;
 	
-	public static void arithmetic(String operator, int x, int y) {
+	public Processor() {
+		operations = new Calculator();
+		console = new IOConsole(System.in, System.out);
+	}
+
+	public static void arithmetic(String operator, Double x, Double y) {
 		
-		if(operator.equals((binary)||(octal)||(decimal)||(hexadecimal)){
-			switchDisplayMode(operation);
-		} else if(operation.equals(display)) {
-			switchDisplayMode();
+		if(operator.matches("binary|octal|decimal|hexadecimal")){
+			operations.switchDisplayMode(operator);
+		} else if(operator.equals("display")) {
+			operations.switchDisplayMode();
 		}
 
 		switch(operator.toLowerCase()) {
