@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class Input here.
+ * Input reads user input and uses regular expressions to parse the inputted string.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Mark Moll Feb 9 2019 
  */
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -11,7 +10,7 @@ import java.util.regex.Matcher;
 public class Input {
     private static Calculations calc = new Calculations();
     public static void main(String[] args) {
-        String input = "80 / 80";
+        String input = "80 * 80";
         String pattern = ("(\\d+)\\s?([+>\\-<=≠≥≤÷−*x·%/])\\s*(\\d+)");
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(input);
