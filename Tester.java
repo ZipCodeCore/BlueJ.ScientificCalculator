@@ -16,12 +16,14 @@ public class Tester
     @Test
     public void testAdd(){
         // : Given
-        String stringAddition = "1+2";
-        String expected = "3.0";
+        String stringAddition = "3-1";
+        String expected = "2.0";
         
-        //String actual = Calculator.calc( stringAddition );
+        Calculator c = new Calculator();
         
-        Assert.assertEquals(expected, expected);
+        String actual = c.calc( stringAddition );
+        
+        Assert.assertEquals(actual, expected);
     }
 
 }
