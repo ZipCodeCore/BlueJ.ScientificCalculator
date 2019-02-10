@@ -22,5 +22,11 @@ public class BonusFeatures
    public static double log(double num){
        return Math.log10(num);
    }
+   
+   public static double inverseLog(double num){
+       double inverse = Math.pow(10,num);
+       return inverse;
+    }
+   
 }
 

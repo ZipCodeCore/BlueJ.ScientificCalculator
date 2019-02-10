@@ -11,7 +11,7 @@ import java.lang.Math;
  * @version (a version number or a date)
  */
 public class BonusFeaturesTest
-{
+                   {
     //Log Function Test
     static final double epsilon = .0005;
     
@@ -41,7 +41,7 @@ public class BonusFeaturesTest
         //Given
         double expected = -.223144;
         //When
-        double actual = BonusFeatures.naturalLog(.8);
+       double actual = BonusFeatures.naturalLog(.8);
         //Then
         Assert.assertEquals(expected,actual,epsilon);
            
@@ -50,7 +50,7 @@ public class BonusFeaturesTest
     @Test
     public void testInverseLn1(){
            //Given
-        double expected = 20.08553692318;
+       double expected = 20.08553692318;
         //When
         double actual = BonusFeatures.inverseNaturalLog(3);
         //Then
@@ -63,20 +63,45 @@ public class BonusFeaturesTest
            //Given
         double expected = .049787068;
         //When
-        double actual = BonusFeatures.inverseNaturalLog(-3);
-        //Then
+        double actual = BonusFeatures.inverseNaturalLog(-3);       //Then
         Assert.assertEquals(expected,actual,epsilon);
         
     }
     
     @Test
-    public void testLog10(){
+    public void testLog101(){
            //Given
         double expected = .4771212547;
         //When
-        double actual = BonusFeatures.log(3);
+       double actual = BonusFeatures.log(3);
         //Then
         Assert.assertEquals(expected,actual,epsilon);
                                                                                                             
     }
+    
+    @Test
+    public void testLog102(){   
+        //Given
+        double expected = -.221849;
+        //When
+        double actual = BonusFeatures.log(.6);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+                                        
+    }
+    
+    @Test
+    public void testInverseLog1(){   
+        //Given
+        double expected = 100;
+        //When
+        double actual = BonusFeatures.inverseLog(2);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+                                        
+    }
+    
+
 }
+
+
