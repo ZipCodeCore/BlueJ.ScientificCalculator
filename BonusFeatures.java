@@ -9,15 +9,18 @@ import java.lang.Math;
 public class BonusFeatures
 {
     
-    
-    
     public static double naturalLog(double num){
         return Math.log(num);
     }
     
+    public static double inverseNaturalLog(double num)
+    {
+        double inverse = Math.pow(Math.E,num);
+        return inverse;
+    }
     
-    
-   
-   
- 
+   public static double log(double num){
+       return Math.log10(num);
+   }
 }
+

@@ -19,23 +19,64 @@ public class BonusFeaturesTest
     public void testLn1(){
         //Given
         double expected = 1.0;
-        double testingWith = Math.E;
-        
         //When
-        double actual = BonusFeatures.naturalLog(testingWith);
-        
+        double actual = BonusFeatures.naturalLog(Math.E);
         //Then
         Assert.assertEquals(expected,actual,epsilon );
     }
     
     @Test
     public void testLn2(){
+        //Given
+        double expected = .69314718055;
+        //When
+        double actual = BonusFeatures.naturalLog(2);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
     
     }
     
     @Test
     public void testLn3(){
+        //Given
+        double expected = -.223144;
+        //When
+        double actual = BonusFeatures.naturalLog(.8);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+           
+    }
+    
+    @Test
+    public void testInverseLn1(){
+           //Given
+        double expected = 20.08553692318;
+        //When
+        double actual = BonusFeatures.inverseNaturalLog(3);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
         
     }
-
+    
+    @Test
+    public void testInverseLn2(){
+           //Given
+        double expected = .049787068;
+        //When
+        double actual = BonusFeatures.inverseNaturalLog(-3);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+        
+    }
+    
+    @Test
+    public void testLog10(){
+           //Given
+        double expected = .4771212547;
+        //When
+        double actual = BonusFeatures.log(3);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+                                                                                                            
+    }
 }
