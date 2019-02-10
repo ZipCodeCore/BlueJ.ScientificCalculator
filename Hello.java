@@ -6,11 +6,11 @@ import java.util.Scanner;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Calculator
+public class Hello
 {
     private IOConsole inputOutput;
     
-    public Calculator(){
+    public Hello(){
         inputOutput = new IOConsole();
     }
     
