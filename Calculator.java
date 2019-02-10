@@ -7,7 +7,7 @@
  */
 
 import  java.lang.Math;
-public class Calculator
+public class Operations
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -15,7 +15,7 @@ public class Calculator
     /**
      * Constructor for objects of class Calculator
      */
-    public Calculator()
+    public Operations()
     {
         // initialise instance variables
         x = 0;
