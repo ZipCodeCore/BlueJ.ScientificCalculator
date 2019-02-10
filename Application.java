@@ -5,14 +5,13 @@ public class Application {
     }
 
     public static void run() {
-        IOConsole console = new IOConsole(System.in, System.out);
+        IOConsole console = new IOConsole();
         Processor processor = new Processor();
         String result = "";
         String numConvert = "";
 
 
         boolean quit = false;
-        
         // Hello 
         console.println("Hello");
         while(!quit) {
