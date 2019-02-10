@@ -7,7 +7,8 @@
  */
 
 import  java.lang.Math;
-public class Calculator
+
+public class Calculator extends MainApplication
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -22,69 +23,112 @@ public class Calculator
     }
 
     
- 
-    
     /**
      * TODO Write comments
      */
-    public int squareMethod(int x)
+    public double squareMethod(int x)
     {
         // put your code here
         return x * x;
         
     }
     
+    public double add(double x,double y)
+    {
+        return (x+y);
+    }
+    
+    public double sub(double x,double y)
+    { if(x>y)
+        {
+        return (x-y);
+    }
+    return 0;
+    }
+
+    public double multiply(double x,double y)
+    {
+        return (x*y);
+    }
+    
+    public double div(double x,double y)
+    {
+        return (double)(x/y);
+    }
     public double squareRootMethod(int x)
     {
         // put your code here
         return Math.sqrt(x);
         
     }
+    
+    public double invertMethod(int x)
+    {
+        // put your code here
+        x=-x;
+        return x;
+        
+    }
+    public double exponentiationtMethod(int x,int y)
+    {
+        // put your code here
+        return Math.pow(x,y);
+        
+    }
+    
     public double inverseMethod(int x)
     {
         // put your code here
-        return (1/x);
+        return 1/(double)x;
         
     }
     
-    public double sineMathMethod(int x)
+    public double sineMathMethod(double x)
     {
-        // put your code here
-        return (Math.sin(x));
+       double radians = Math.toRadians(x);
+
+     
+      return  Math.sin(radians);
         
     }
     
-    public double cosMathMethod(int x)
-    {
+    public double cosMathMethod(double x)
+
+   {
+        double radians = Math.toRadians(x);
         // put your code here
-        return (Math.cos(x));
+        return (Math.cos(radians));
         
     }
     
-    public double tanMathMethod(int x)
+    public double tanMathMethod(double x)
     {
+        double radians = Math.toRadians(x);
         // put your code here
-        return (Math.tan(x));
+        return (Math.tan(radians));
         
     }
-    public double invSineMathMethod(int x)
+    public double invSineMathMethod(double x)
     {
+       double radians = Math.toRadians(x);
         // put your code here
-        return (Math.asin(x));
-        
-    }
-    
-    public double invCosMathMethod(int x)
-    {
-        // put your code here
-        return (Math.acos(x));
+        return (Math.asin(radians));
         
     }
     
-    public double invTanMathMethod(int x)
+    public double invCosMathMethod(double x)
     {
+        double radians = Math.toRadians(x);
         // put your code here
-        return (Math.atan(x));
+        return (Math.acos(radians));
+        
+    }
+    
+    public double invTanMathMethod(double x)
+    {
+        double radians = Math.toRadians(x);
+        // put your code here
+        return (Math.atan(radians));
         
     }
     
@@ -99,5 +143,27 @@ public class Calculator
         return result;
     }
     
-   
+    public String toBinary(int x)
+    {
+        String binary =Integer.toBinaryString( x );
+        return binary;
+    }
+    
+    public String toOctal(int x)
+    {
+        String octal =Integer.toOctalString( x );
+        return octal;
+    }
+    
+    /*public String tofloat (int x)
+    {
+        String fl =Integer.floatValue( x );
+        return fl;
+    }
+*/    
+    public String toHexadecimal(int x)
+    {
+        String hexa =Integer.toHexString( x );
+        return hexa;
+    }
 }
