@@ -100,7 +100,16 @@ public class BonusFeaturesTest
         Assert.assertEquals(expected,actual,epsilon);
                                         
     }
-    
+    @Test
+    public void factorial1(){   
+        //Given
+        double expected = 6;
+        //When
+        double actual = BonusFeatures.factorial(3);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+                                        
+    }
 
 }
 

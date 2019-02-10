@@ -27,6 +27,17 @@ public class BonusFeatures
        double inverse = Math.pow(10,num);
        return inverse;
     }
-   
+    
+    public static double factorial(double num){
+        double factorial=1;
+        for(double i=1; i<=num; i++){
+         factorial = factorial * i;
+        }
+        return factorial;
+     }
 }
-
+ 
+    
+    
+ 
+   
