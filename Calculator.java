@@ -1,13 +1,17 @@
+
 import java.util.Scanner;
-public class MainApplication {
+/**
+ * Write a description of class Calculator here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Calculator
+{
     private IOConsole inputOutput;
-    public MainApplication(){
-        
-        inputOutput = new IOConsole();
-    }
     
-    public static void main(String[] args) {
-        
+    public Calculator(){
+        inputOutput = new IOConsole();
     }
     
     public void start(){
@@ -18,5 +22,4 @@ public class MainApplication {
         Double result = 0.0;
         inputOutput.println(result);
     }
-    }
-
+}
