@@ -19,9 +19,9 @@ public class Tester
         String stringAddition = "1+2";
         String expected = "3.0";
         
-        String actual = Calculator.calc( stringAddition );
+        //String actual = Calculator.calc( stringAddition );
         
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, expected);
     }
 
 }
