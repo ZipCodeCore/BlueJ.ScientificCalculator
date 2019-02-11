@@ -9,28 +9,21 @@ public class Processor {
     }
 
     // display method that ask the user what they want to do and shows possible operations including display mode which switches to binary octal decimal hexadecimal
-    public static String changeMode(String mode, Double x, Double y) {
+    public static String changeMode(String mode, int num) {
     	String result = "";
     	if(mode.matches("binary")){
-            Integer binaryX = (Integer) x;
-            Integer BinaryY = (Integer) y;
-            result += operations.toBinary(x);
-            result += operations.toBinary(y);
+            Integer binaryNum = (Integer) num;
+            result += operations.toBinary(num);
         } else if(mode.matches("octal")){
-            Integer octalX = (Integer) x;
-            Integer octalY = (Integer) y;
-            result += operations.toOctal(x,y);
-            result += operations.toOctal(y);
+            Integer octalNum = (Integer) num;
+            result += operations.toOctal(num);
         } else if(mode.matches("decimal")){
-            Integer decimalX = (Integer) x;
-            Integer decimalY = (Integer) y;
-            result += operations.toDecimal(x);
-            result += operations.toDecimal(y);
+            Integer decimalNum = (Integer) num;
+            // result += operations.toDecimal(Num);
+            // result += operations.toDecimal(y);
         } else if (mode.matches("hexadecimal")){
-            Integer hexadecimalX = (Integer) x;
-            Integer hexadecimalY = (Integer) y;
-            result += operations.toHexadecimal(x,y);
-            result += operations.toHexadecimal(y);
+            Integer hexadecimalNum = (Integer) num;
+            result += operations.toOctal(num);
         }
         return result;
     }
@@ -52,58 +45,49 @@ public class Processor {
         case "+": result+= operations.add(x,y);
         break;
 
-        case "-": result+= operations.subtract(x,y);
+        case "-": result+= operations.sub(x,y);
         break;
         
-        case "/": result+= operations.divide(x,y);
+        case "/": result+= operations.div(x,y);
         break;
 
-        case "%": result+= operations.remainder(x,y);
+        case "*": result+= operations.multiply(x,y);
         break;
 
-        case "*": result+= operations.mulit(x,y);
-        break;
-
-        case "^": result+= operations.exponentiation(x,y);
+        case "^": result+= operations.exponentiationMethod(x,y);
         break;
         
-        case "inverse": result+= operations.inverse(x);
+        case "inverse": result+= operations.inverseMethod(x);
         break;
 
-        case "square": result+= operations.square(x);
+        case "square": result+= operations.squareMethod(x);
         break;
         
-        case "invert": result+= operations.invert(x,y);
+        case "invert": result+= operations.invertMethod(x);
         break;
 
-        case "factorial": result+= operations.factorial(x);
+        case "!": result+= operations.factorialMethod(x);
+        break;
+
+        case "sqrt": result+= operations.squareRootMethod(x);
         break;
         
-        case "switchSign": result+= operations.switchSign(x);
+        case "sin": result+= operations.sineMathMethod(x);
         break;
 
-        case "sqrt": result+= operations.sqrt(x);
-        break;
-        
-        case "sine": result+= operations.sine(x,y);
+        case "asin": result+= operations.invSineMathMethod(x);
         break;
 
-        case "asin": result+= operations.asin(x,y);
+        case "cos": result+= operations.cosMathMethod(x);
         break;
 
-        case "cos": result+= operations.cos(x,y);
+        case "acos": result+= operations.invCosMathMethod(x);
         break;
 
-        case "acos": result+= operations.acos(x,y);
+        case "tan": result+= operations.tanMathMethod(x);
         break;
 
-        case "tan": result+= operations.tan(x,y);
-        break;
-
-        case "atan": result+= operations.atan(x,y);
-        break;
-
-        case "quit": result = "bye!";
+        case "atan": result+= operations.invTanMathMethod(x);
         break;
         }
         return result;

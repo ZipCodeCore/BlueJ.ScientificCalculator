@@ -8,10 +8,10 @@
 
 import  java.lang.Math;
 
-public class Calculator extends MainApplication
+public class Calculator
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private Double x;
 
     /**
      * Constructor for objects of class Calculator
@@ -19,120 +19,117 @@ public class Calculator extends MainApplication
     public Calculator()
     {
         // initialise instance variables
-        x = 0;
+        x = 0.0;
     }
 
     
     /**
      * TODO Write comments
      */
-    public double squareMethod(int x)
+    public Double squareMethod(Double x)
     {
         // put your code here
         return x * x;
         
     }
     
-    public double add(double x,double y)
+    public Double add(Double x,Double y)
     {
         return (x+y);
     }
     
-    public double sub(double x,double y)
-    { if(x>y)
-        {
-        return (x-y);
-    }
-    return 0;
+    public Double sub(Double x,Double y)
+    { 
+        return x - y;
     }
 
-    public double multiply(double x,double y)
+    public Double multiply(Double x,Double y)
     {
         return (x*y);
     }
     
-    public double div(double x,double y)
+    public Double div(Double x,Double y)
     {
-        return (double)(x/y);
+        return (Double)(x/y);
     }
-    public double squareRootMethod(int x)
+    public Double squareRootMethod(Double x)
     {
         // put your code here
         return Math.sqrt(x);
         
     }
     
-    public double invertMethod(int x)
+    public Double invertMethod(Double x)
     {
         // put your code here
         x=-x;
         return x;
         
     }
-    public double exponentiationtMethod(int x,int y)
+    public Double exponentiationMethod(Double x,Double y)
     {
         // put your code here
         return Math.pow(x,y);
         
     }
     
-    public double inverseMethod(int x)
+    public Double inverseMethod(Double x)
     {
         // put your code here
-        return 1/(double)x;
+        return 1/(Double)x;
         
     }
     
-    public double sineMathMethod(double x)
+    public Double sineMathMethod(Double x)
     {
-       double radians = Math.toRadians(x);
+       Double radians = Math.toRadians(x);
 
      
-      return  Math.sin(radians);
+      return  (Math.sin(radians));
         
     }
     
-    public double cosMathMethod(double x)
+    public Double cosMathMethod(Double x)
 
    {
-        double radians = Math.toRadians(x);
+        Double radians = Math.toRadians(x);
         // put your code here
         return (Math.cos(radians));
         
     }
     
-    public double tanMathMethod(double x)
+    public Double tanMathMethod(Double x)
     {
-        double radians = Math.toRadians(x);
+        Double radians = Math.toRadians(x);
         // put your code here
         return (Math.tan(radians));
         
     }
-    public double invSineMathMethod(double x)
+    public Double invSineMathMethod(Double x)
     {
-       double radians = Math.toRadians(x);
-        // put your code here
-        return (Math.asin(radians));
+       //Double radians = Math.toRadians(x);
+        
+       return (Math.asin(x));
         
     }
     
-    public double invCosMathMethod(double x)
+    public Double invCosMathMethod(Double x)
     {
-        double radians = Math.toRadians(x);
+        Double radians = Math.toRadians(x);
         // put your code here
         return (Math.acos(radians));
         
     }
     
-    public double invTanMathMethod(double x)
+    public Double invTanMathMethod(Double x)
     {
-        double radians = Math.toRadians(x);
+        //Double radians = Math.toRadians(x);
         // put your code here
-        return (Math.atan(radians));
+        return (Math.atan(x));
         
     }
     
-    public long factorialMethod(int x){
+    public long factorialMethod(Double x){
         
         long result = 1;
 

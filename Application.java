@@ -1,5 +1,9 @@
 public class Application {
     
+    public Application() {
+    
+    }
+    
     public static void main(String[] args) {
         run();
     }
@@ -13,56 +17,76 @@ public class Application {
 
         boolean quit = false;
         // Hello 
-        console.println("Hello");
+        console.println("Hi!");
         while(!quit) {
             
-            console.println("Would you like to change the display?");
-            String input = console.getStringInput();
-            if (input.matches("yes")){
-                console.println("Would you like to view display options"); 
-                String viewDisplayinput = console.getStringInput();
-                if(viewDisplayinput.matches("yes")) {
-                    processor.displayMode("display");
-                } else {
-                    console.println("Enter Mode:");
-                    String mode = console.getStringInput();
-                    processor.displayMode(mode);
-                    console.println("Enter x");
-                    Double x = console.getDoubleInput();
-                    numConvert = processor.changeMode(mode, x);
-                    console.println(numConvert);
-                    // enter y
-                    console.println("Enter y");
-                    Double y = console.getDoubleInput();
-                    numConvert = processor.changeMode(mode, y);
-                    console.println(numConvert);
-                }
-            }
-            // enter x
-            console.println("Enter x");
-            Double x = console.getDoubleInput();
-            // enter operator
-            console.println("Enter operator");
-            String operator = console.getStringInput();
-            // enter y
-            console.println("Enter y");
-            Double y = console.getDoubleInput();
+            // String input = console.getStringInput("Would you like to change the display?");
+            // if (input.matches("yes")){
+            //     String viewDisplayinput = console.getStringInput("Would you like to view display options"); 
+            //     if(viewDisplayinput.matches("yes")) {
+            //         processor.displayMode("display");
+            //     } else {
+            //         String mode = console.getStringInput("Enter Mode:");
+            //         processor.displayMode(mode);
+            //         Integer x = console.getIntegerInput("Enter x");
+            //         numConvert = processor.changeMode(mode, x);
+            //         console.println(numConvert);
+            //         // enter y
+            //         Integer y = console.getIntegerInput("Enter y");
+            //         numConvert = processor.changeMode(mode, y);
+            //         console.println(numConvert);
+            //     }
+            // }
+
             
-            result = processor.arithmetic(operator, x, y);
-            // print result
-            console.log(result);
+            // enter operator
+            String operator = console.getStringInput("Enter operator");
+            
+            boolean isValid = isValid(operator);
+            if(!isValid) {
+                run();
+            } else {
+                if(operator.matches("inverse|square|invert|!|sqrt|sin|asin|cos|acos|tan|atan|")){
+                Double x = console.getDoubleInput("Enter x");
+                result = processor.arithmetic(operator, x, 0.0);    
+            } else {
+                // enter x
+                Double x = console.getDoubleInput("Enter x");
+                // enter y
+                Double y = console.getDoubleInput("Enter y");
+                result = processor.arithmetic(operator, x, y);
+            }
+            
+        }
+        // print result
+            console.println(result);
             
             console.println("Would you like to do more Math????");
             console.println("Enter: yes to continue.");
-            console.println("Enter: no to quit.");
+            String redo = console.getStringInput("Enter: no to quit.");
 
             // More math?
-            String redo = console.getStringInput();
             if(redo.equals("no")) {
                 quit = true;
-            }   
+            } else {
+                console.clearScreen();
+                quit = false;
+            }
+            
+               
         }
         // bye!
     }
+    public static boolean  isValid(String operation) {
+        String[] operations = {"-", "/", "*", "^", "+" , "inverse" , "square" ,  "invert" ,  "!" , "sqrt",  "sin" , "asin" , "cos" ,  "acos" , "tan" , "atan"};
+        for(int i= 0; i < operations.length-1; i++) {
+            if(operations[i].equals(operation)) {
+                return true;
+            } 
+        }
+        return false;
+    }
+    
+    
 }
 

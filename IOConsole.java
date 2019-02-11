@@ -76,4 +76,8 @@ public class IOConsole {
         Double result = scanner.nextDouble();
         return result;
     }
+    
+    public  void clearScreen() {
+       out.print('\u000C');
+   }
 }

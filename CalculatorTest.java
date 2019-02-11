@@ -34,11 +34,11 @@ public class CalculatorTest
     @Test
     public void squareMethodTest(){
         //:Given
-        int x = 5;
+        Double x = 5.0;
         
         //Expected
-         double expected = 25;
-         double actual =  calculator.squareMethod( x );
+         Double expected = 25.0;
+         Double actual =  calculator.squareMethod( x );
 
         //:Then
         Assert.assertEquals("Values should be equal", expected, actual);
@@ -47,12 +47,12 @@ public class CalculatorTest
     @Test
     public void addMethodTest(){
         //:Given
-        double x = 5;
-        double y = 8;
+        Double x = 5.0;
+        Double y = 8.0;
         
         //Expected
-         double expected = 13;
-         double actual =  calculator.add(x , y);
+         Double expected = 13.0;
+         Double actual =  calculator.add(x , y);
 
         //:Then
         Assert.assertEquals("Values should be equal", expected, actual);
@@ -62,12 +62,12 @@ public class CalculatorTest
     @Test
     public void subStartMethodTest(){
         //:Given
-        double x = 8;
-        double y = 5;
+        Double x = 8.0;
+        Double y = 5.0;
         
         //Expected
-         double expected = 3;
-         double actual =  calculator.sub(x , y);
+         Double expected = 3.0;
+         Double actual =  calculator.sub(x , y);
 
         //:Then
         Assert.assertEquals("Values should be equal", expected, actual);
@@ -76,12 +76,12 @@ public class CalculatorTest
     @Test
     public void multiStartMethodTest(){
         //:Given
-        double x = 5;
-        double y = 8;
+        Double x = 5.0;
+        Double y = 8.0;
         
         //Expected
-         double expected = 40;
-         double actual =  calculator.multiply(x , y);
+         Double expected = 40.0;
+         Double actual =  calculator.multiply(x , y);
 
         //:Then
         Assert.assertEquals("Values should be equal", expected, actual);
@@ -91,12 +91,12 @@ public class CalculatorTest
     @Test
     public void divStartMethodTest(){
         //:Given
-        double x = 8;
-        double y = 5;
+        Double x = 8.0;
+        Double y = 5.0;
         
         //Expected
-         double expected = 1.6;
-         double actual =  calculator.div(x , y);
+         Double expected = 1.6;
+         Double actual =  calculator.div(x , y);
 
         //:Then
         Assert.assertEquals(  expected, actual , Double.NaN);
@@ -107,12 +107,12 @@ public class CalculatorTest
     @Test
     public void squareRootMethodTest(){
         //:Given
-        int x = 16;
+        Double x = 16.0;
         
         
         //Expected
-         double expected = 4.0;
-         double actual =  calculator.squareRootMethod(x);
+         Double expected = 4.0;
+         Double actual =  calculator.squareRootMethod(x);
          
                
 
@@ -123,13 +123,13 @@ public class CalculatorTest
     
     public void exponentiationMethodTest(){
         //:Given
-        int x = 3;
-        int y = 2;
+        Double x = 3.0;
+        Double y = 2.0;
         
         
         //Expected
-         double expected = 9;
-         double actual =  calculator.exponentiationtMethod( x , y );
+         Double expected = 9.0;
+         Double actual =  calculator.exponentiationMethod( x , y );
          
                
 
@@ -139,13 +139,13 @@ public class CalculatorTest
     
     public void invertMethodTest(){
         //:Given
-        int x = 3;
+        Double x = 3.0;
         
         
         
         //Expected
-         double expected = -3;
-         double actual =  calculator.invertMethod( x );
+         Double expected = -3.0;
+         Double actual =  calculator.invertMethod( x );
          
                
 
@@ -155,11 +155,11 @@ public class CalculatorTest
     @Test
     public void inverseMethodTest(){
         //:Given
-        int x = 2;
+        Double x = 2.0;
         
         //Expected
-         double expected = 0.5;
-         double actual =  calculator.inverseMethod(x);
+         Double expected = 0.5;
+         Double actual =  calculator.inverseMethod(x);
 
         //:Then
         Assert.assertEquals(  expected, actual , Double.NaN);
@@ -168,11 +168,11 @@ public class CalculatorTest
     @Test
     public void sineMathMethodTest(){
         //:Given
-        double x = 90.0;
+        Double x = 90.0;
         
         //Expected
-         double expected = 1.0;
-         double actual =  calculator.sineMathMethod(x);
+         Double expected = 1.0;
+         Double actual =  calculator.sineMathMethod(x);
 
         //:Then
         Assert.assertEquals(  expected, actual , Double.NaN);
@@ -181,11 +181,11 @@ public class CalculatorTest
      @Test
     public void tanMathMethodTest(){
         //:Given
-        double x = 45.0;
+        Double x = 45.0;
         
         //Expected
-         double expected = 0.9999999999999999;
-         double actual =  calculator.tanMathMethod(x);
+         Double expected = 0.9999999999999999;
+         Double actual =  calculator.tanMathMethod(x);
 
         //:Then
         Assert.assertEquals(  expected, actual , Double.NaN);
@@ -194,11 +194,11 @@ public class CalculatorTest
     @Test
     public void invSineMathMethodTest(){
         //:Given
-        double x = 45.0;
+        Double x = 45.0;
         
         //Expected
-         double expected = 0.9033391107665127;
-         double actual =  calculator.invSineMathMethod(x);
+         Double expected = 0.9033391107665127;
+         Double actual =  calculator.invSineMathMethod(x);
 
         //:Then
         Assert.assertEquals(  expected, actual , Double.NaN);
@@ -207,11 +207,11 @@ public class CalculatorTest
     @Test
     public void invCosMathMethodTest(){
         //:Given
-        double x = 45.0;
+        Double x = 45.0;
         
         //Expected
-         double expected = 0.6674572160283838;
-         double actual =  calculator.invCosMathMethod(x);
+         Double expected = 0.6674572160283838;
+         Double actual =  calculator.invCosMathMethod(x);
 
         //:Then
         Assert.assertEquals(  expected, actual , Double.NaN);
@@ -220,11 +220,11 @@ public class CalculatorTest
     @Test
     public void invTanMathMethodTest(){
         //:Given
-        double x = 45.0;
+        Double x = 45.0;
         
         //Expected
-         double expected = 0.6657737500283538;
-         double actual =  calculator.invTanMathMethod(x);
+         Double expected = 0.6657737500283538;
+         Double actual =  calculator.invTanMathMethod(x);
 
         //:Then
         Assert.assertEquals(  expected, actual , Double.NaN);
@@ -233,11 +233,11 @@ public class CalculatorTest
     @Test
     public void factorialMethodTest(){
         //:Given
-        int x = 4;
+        Double x = 4.0;
         
         //Expected
-         float expected = 24;
-         double actual =  calculator.factorialMethod(x);
+         Long expected = 24L;
+         Long actual =  calculator.factorialMethod(x);
 
         //:Then
         Assert.assertEquals(  expected, actual , Double.NaN);
