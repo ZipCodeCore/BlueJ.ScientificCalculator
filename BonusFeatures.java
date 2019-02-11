@@ -39,10 +39,16 @@ public class BonusFeatures
     }
 
     public static double permutation(double n, double r){
-        double result;
+        double permutation;
 
-        result = BonusFeatures.factorial(n)/BonusFeatures.factorial(n-r);
-        return result;
+        permutation = BonusFeatures.factorial(n)/BonusFeatures.factorial(n-r);
+        return permutation;
+    }
+
+    public static double combinations(double n,double r){
+        double combinations;
+        combinations = BonusFeatures.factorial(n)/(BonusFeatures.factorial(n-r)*BonusFeatures.factorial(r));
+        return combinations;
     }
 
 }

@@ -1,5 +1,4 @@
 
-
 import org.junit.Assert;
 import org.junit.Test;
 import java.lang.Math;
@@ -111,7 +110,7 @@ public class BonusFeaturesTest
         Assert.assertEquals(expected,actual,epsilon);
 
     }
-    
+
     @Test
     public void factorial2(){
         //Given
@@ -121,14 +120,47 @@ public class BonusFeaturesTest
         //Then
         Assert.assertEquals(expected,actual,epsilon);
     }
+
+    @Test
+    public void Permutations1(){
+        //Given
+        double expected = 24;
+        //When
+        double actual = BonusFeatures.permutation(4,4);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+
+    }
+
     @Test
     public void Permutations(){
-       //Given
-       double expected = 24;
-       //When
-       double actual = BonusFeatures.permutation(4,4);
-       //Then
-       Assert.assertEquals(expected,actual,epsilon);
+        //Given
+        double expected = 12;
+        //Whengit
+        double actual = BonusFeatures.permutation(4,2);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+
     }
-}
+
+    @Test
+    public void Combinations1(){
+        //Given
+        double expected = 6;
+        //When
+        double actual = BonusFeatures.combinations(4,2);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+    }
+
+    @Test
+    public void Combinations2(){
+        //Given
+        double expected = 1;
+        //When
+        double actual = BonusFeatures.combinations(4,4);
+        //Then
+        Assert.assertEquals(expected,actual,epsilon);
+
+    }}
 
