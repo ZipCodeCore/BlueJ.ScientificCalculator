@@ -7,8 +7,8 @@ import java.lang.Math;
 /**
  * The test class BonusFeaturesTest.
  *
- * @author  (your name)
- * @version (a version number or a date)
+ * @Arcelia Calleja
+ * @2/10/19
  */
 public class BonusFeaturesTest
 {
@@ -120,6 +120,15 @@ public class BonusFeaturesTest
         double actual = BonusFeatures.factorial(10);
         //Then
         Assert.assertEquals(expected,actual,epsilon);
+    }
+    @Test
+    public void Permutations(){
+       //Given
+       double expected = 24;
+       //When
+       double actual = BonusFeatures.permutation(4,4);
+       //Then
+       Assert.assertEquals(expected,actual,epsilon);
     }
 }
 
